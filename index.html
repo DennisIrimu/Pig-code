@@ -1,17 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>Pig Dice Game</title>
-  </head>
   <body>
 
 <div class="container 1">
   <div class="jumbotron">
     <h1>Let's play Pig Dice!</h1>
+    <form id="PNameForm"
     <form id="p1">
       <div class="form-group">
         <label for="P1Name"> Input player 1 Name:</label>
@@ -22,8 +17,33 @@
         <input type="text" class="form-control" id="player-two-name">
       </div>
     </form>
-    <button id="start" class="btn btn-start">Begin</button>
+    <button id="start" class="btn btn-primary">Begin</button>
   </div>
 </div>
 
-<div class=""
+<div class="startgame">
+  <h3><span id="P1Name"></span> total Score: <span id="P1-total"></span></h3>
+  <h3><span id="P2Name"></span> total Score: <span id="P2-total"></span></h3>
+</div>
+<div class=display>
+<h3 id="P1Display"</h3>
+  <h3 id="P2Display"</h3>
+  </div>
+
+<button type="submit" class="btn btn-win" id="rolldice">It's your turn to roll</button>
+</div>
+<button type="submit" class="btn btn-lost" id="Endturn">Next player</button>
+
+  <div id="Addtotal">
+    <h3><span id="rollresult"></span><h3>
+    </div>
+
+    <div id="turnTotal">
+      <h3>Turn total:</h3>
+      <h3><span id="turnTotal"></span><h3>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
